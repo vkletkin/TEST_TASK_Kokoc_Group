@@ -24,7 +24,7 @@
     
 Запуск приложения на ОС Windows:
 
-     Шаг 1) Установка и запуск вируального окружения , командами python -m venv venv,  source venv/Scripts/activate
+     Шаг 1) Установка и запуск вируального окружения , командами: python -m venv venv,  source venv/Scripts/activate
      Шаг 2) Установка всех пакетов в файле requirements.txt, командой -m pip install -r requirements.txt 
-     Шаг 3) Пропись миграций командами python manage.py makemigrations и python manage.py migrate.
+     Шаг 3) Пропись миграций командами: python manage.py makemigrations, python manage.py migrate.
      Шаг 4) Запуск сервера python manage.py runserver
