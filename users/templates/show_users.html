@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block title %}Все Пользователи{% endblock %}
+{% block header %}Пользователи{% endblock %}
+
+{% block content %}
+
+    {% for user in users %}
+    <h3>
+        {{ user.user.username }}, пройдено тестов: {{ user.passed_tests}}, очков: {{ user.points_count}} 
+    </h3>
+    <p> Цвет : {{ user.color }}</p>
+    {% if not forloop.last %}<hr>{% endif %}
+    {% endfor %}
+
+{% endblock %}

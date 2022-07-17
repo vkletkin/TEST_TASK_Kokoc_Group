@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block title %}Все тесты{% endblock %}
+{% block header %}Тесты{% endblock %}
+
+{% block content %}
+
+    {% for test in tests %}
+    <h3>
+        {{ test.title }}, {{ test.questions_count}} вопросов
+    </h3>
+    <p> Автор : {{ test.owner }} , ID : {{ test.pk }},</p>
+    {% if not forloop.last %}<hr>{% endif %}
+    {% endfor %}
+
+{% endblock %}
